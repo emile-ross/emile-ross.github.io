@@ -46,6 +46,17 @@
 			</li>
 		</ul>
 	</div>
+	<script>
+	const lang = navigator.language.toLowerCase();
+	
+	document.querySelectorAll("[lang]").forEach
+	(el => {
+		if (!lang.startsWith(el.lang.toLowerCase()))
+		{
+			el.hidden = true;
+		}
+	});
+	</script>
 </div>
 </body>
 </html>
