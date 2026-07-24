@@ -15,10 +15,9 @@
 	<h1>Emile Ross</h1>
 	
    
-	<html >
-		<p lang="fr">Jeux d'habiletés:</p>
-			<p lang="fr"><a href="https://emile-ross.github.io/jeux/index.html">lien vers les jeux</a></p>
-	</html>
+	<p lang="fr">Jeux d'habiletés:</p>
+	<p lang="fr"><a href="https://emile-ross.github.io/jeux/index.html">lien vers les jeux</a></p>
+
 	<p lang="en">Biking skill games (French):</p>
 	<p lang="en"><a href="https://emile-ross.github.io/jeux/index.html">link to the games</a></p>
 
@@ -43,6 +42,18 @@
 	<footer>
 		<img src="https://emile-ross.github.io/assets/gifs/madeon_linux.gif" height="31" />
 		<p>Github <a href="https://github.com/emile-ross">emile-ross</a></p>
+	
+	<script>
+	const lang = navigator.language.toLowerCase();
+	
+	document.querySelectorAll("[lang]").forEach
+	(el => {
+		if (!lang.startsWith(el.lang.toLowerCase()))
+		{
+			el.hidden = true;
+		}
+	});
+	</script>
 	</footer>
 </body>
 </html>
