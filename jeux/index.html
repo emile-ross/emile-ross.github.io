@@ -17,7 +17,15 @@
 <div id="cities"></div>
 <script>  const cities = [
 	{
-		
+
+		/*
+		name: "Granby",      
+		year: 2026,      
+		updated: "2026/08/08",      
+		u9Pdf: "https://emile-ross.github.io/assets/2026/08/08/2026_U9_granby.pdf",      
+		u11u13Pdf: "https://emile-ross.github.io/assets/2026/08/08/2026_U11_U13_granby.pdf"
+		*/
+
 		name: "Boucherville",      
 		year: 2026,      
 		updated: "2026/08/08",      
@@ -25,7 +33,7 @@
 		u11u13Pdf: "https://emile-ross.github.io/assets/2026/08/08/2026_U11_U13_boucherville.pdf"
 	}, 
 	{
-		name: "Rouyn Noranda (abitibi)",      
+		name: "Abitibi (Rouyn Noranda)",      
 		year: 2026,      
 		updated: "2026/07/18",      
 		u9Pdf: "https://emile-ross.github.io/assets/2026/07/18/2026_U9_abitibi.pdf",      
@@ -46,6 +54,7 @@
 	(city => { 
 		const category = document.createElement("div");
 		category.className = "category";
+		/* make the html for english and french */
 		category.innerHTML = `      
 			<h3>${city.name} ${city.year}</h3>      
 			<ul>        
