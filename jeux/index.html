@@ -14,6 +14,7 @@
 	<h2 lang="en">Competitions</h2>
 
 	<!-- make a small box (square/squircle) -->
+<div id="cities"></div>
 <script>  const cities = [
 	{
 		
@@ -39,8 +40,23 @@
 	}
 ];
 
+	/* Write the html from the constant cities */
+	const container = document.getElementById("cities");
+	cities.forEach
+	(city => { 
+		const category = document.createElement("div");
+		category.className = "category";
+		category.innerHTML = `      
+			<h3>${city.name} ${city.year}</h3>      
+			<ul>        
+				<li lang="en">U9 Layout <a href="${city.u9Pdf}">PDF U9</a></li>
+				<li lang="fr">Parcours U9 <a href="${city.u9Pdf}">PDF U9</a></li>
 
+				<li lang="en">U11-U13 Layout <a href="${city.u11u13Pdf}">PDF U11-U13</a></li>
+				<li lang="fr">Parcours U11-U13 <a href="${city.u11u13Pdf}">PDF U11-U13</a></li>
+			</ul>    `;
 
+	container.appendChild(category);  });
 
 	const lang = navigator.language.toLowerCase();
 	
